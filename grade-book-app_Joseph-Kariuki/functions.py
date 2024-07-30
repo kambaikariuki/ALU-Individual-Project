@@ -36,7 +36,7 @@ class Course:
         self.name = name
         self.trimester = trimester
         self.credits = credits
-        self.grade_point = 0.0  # Placeholder for future GPA-based functionality
+        self.grade_point = 0.0  # Placeholder 
 
 class GradeBook:
     def __init__(self):

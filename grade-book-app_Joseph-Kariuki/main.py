@@ -3,12 +3,13 @@ def main():
     grade_book = GradeBook()
     
     while True:
-        print("\nMenu:")
+        print("\nWelcome to the Grade Book Application")
+        print("\n       Menu")
         print("1. Add Student")
         print("2. Add Course")
         print("3. Register Student for Course")
-        print("4. Update student GPA")
-        print("5. Calculate GPA for all Students")
+        print("4. Calculate GPA for all Students")
+        print("5. Update student GPA")
         print("6. Calculate Ranking")
         print("7. Search Students by Grade")
         print("8. Save Students to file")
@@ -17,7 +18,7 @@ def main():
         
         
         
-        choice = input("Enter your choice: ")
+        choice = input("\n\nEnter your choice: ")
         
         if choice == '1':
             grade_book.add_student()
@@ -29,11 +30,11 @@ def main():
             grade_book.register_student_for_course()
 
         elif choice == '4':
-            email = input("Enter student's email to update GPA: ")
-            grade_book.update_student_gpa(email)
+            grade_book.calculate_GPA()
         
         elif choice == '5':
-            grade_book.calculate_GPA()
+            email = input("Enter student's email to update GPA: ")
+            grade_book.update_student_gpa(email)
         
         elif choice == '6':
             grade_book.calculate_ranking()
